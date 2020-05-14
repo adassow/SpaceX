@@ -1,6 +1,5 @@
 from main.ota_updater import OTAUpdater
 from main import wifimgr
-from main.main import SpaceX
 
 def download_and_install_update_if_available():
     o = OTAUpdater('https://github.com/adassow/SpaceX')
@@ -8,7 +7,7 @@ def download_and_install_update_if_available():
 
 
 def start():
-    
+    from main.main import SpaceX
     project = SpaceX()
 
 def boot():

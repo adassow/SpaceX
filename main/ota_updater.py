@@ -107,7 +107,7 @@ class OTAUpdater:
             f = open(directory + '/' + version_file_name)
             version = f.read()
             f.close()
-            return version
+            return version.strip()
         return '0.0'
 
     def get_latest_version(self):
@@ -124,9 +124,13 @@ class OTAUpdater:
                 download_path = self.modulepath('next/' + file['path'].replace(self.main_dir + '/', ''))
                 self.download_file(download_url.replace('refs/tags/', ''), download_path)
             elif file['type'] == 'dir':
-                path = self.modulepath('next/' + file['path'].replace(self.main_dir + '/', ''))
-                os.mkdir(path)
-                self.download_all_files(root_url + '/' + file['name'], version)
+                try:
+                    path = self.modulepath('next/' + file['path'].replace(self.main_dir + '/', ''))
+                    os.mkdir(path)
+                    self.download_all_files(root_url + '/' + file['name'], version)
+                except:
+                    print("dir already exist")
+
 
         file_list.close()
 
