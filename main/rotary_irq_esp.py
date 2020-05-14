@@ -9,7 +9,7 @@
 #   https://github.com/MikeTeachman/micropython-rotary
 
 from machine import Pin
-from rotary import Rotary
+from main.rotary import Rotary
 from sys import platform
 
 _esp8266_blacklist_pins = [16]

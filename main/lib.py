@@ -1,4 +1,4 @@
-import pcf8574
+import main.pcf8574
 from machine import Pin
 
 class NeoPixelRange:
@@ -55,7 +55,7 @@ class PixelSet:
 
 class Switches:
     def __init__(self, interrupt, i2c, address, np, buzzer, colors = None):
-        self.pcf = pcf8574.PCF8574(i2c, address)
+        self.pcf = main.pcf8574.PCF8574(i2c, address)
         self.np = np
         self.pins = {}
         self.callbacks = {}

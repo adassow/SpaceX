@@ -1,0 +1,48 @@
+0 - 
+2 - enc5
+3 - 
+4 - enc5
+5 - enc_button5
+12 - led
+
+button 
+13 - enc1
+14 - enc1
+15 - enc_button1
+16 - enc2
+17 - enc2
+18 - enc_button2
+19 - enc3
+
+21 - lcd
+22 - lcd
+
+23 - enc3
+25 - enc_button3
+26 - enc4
+27 - enc4
+32 - enc_button4
+33 - buzzer
+
+34 - adc3
+35 - adc4
+36 - adc1
+39 - adc2
+
+spi1_1 - button1
+spi1_2 - button2
+spi1_3 - button3
+spi1_4 - button4
+spi1_5 - button5
+spi1_6 - button6
+spi1_7 - button7
+spi1_8 - button8
+
+spi2_1 - button9
+spi2_2 - button10
+spi2_3 - sw1
+spi2_4 - sw2
+spi2_5 - sw3
+spi2_6 - sw4
+spi2_7 - key_button
+spi2_8 - extra_button
